@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Archive of Desire</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+
+  <header>
+    <span>
+      ARCHIVE OF DESIRE
+      <span class="connected-only">— CONTROL INTERFACE</span>
+    </span>
+
+    <span>001 / DESIRE</span>
+  </header>
+
+  <main>
+
+    <!-- HORIZONTAL INFLUENCER STREAM -->
+    <section class="stream-area" aria-hidden="true">
+      <div class="stream-track" id="videoTrack"></div>
+    </section>
+
+    <!-- CONTROL INTERFACE -->
+    <section class="interface">
+
+      <div class="status-group">
+
+        <p class="label">SYSTEM STATUS</p>
+
+        <!-- Appears only when connected -->
+        <div class="consuming-indicator">
+
+          <svg
+            viewBox="0 0 24 24"
+            width="22"
+            height="22"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.8"
+            stroke-linecap="round"
+            aria-hidden="true"
+          >
+            <circle cx="12" cy="10" r="1.5" />
+            <path d="M12 12v9" />
+            <path d="M8.5 6.5a5 5 0 0 0 0 7" />
+            <path d="M15.5 6.5a5 5 0 0 1 0 7" />
+            <path d="M5.5 3.5a9 9 0 0 0 0 13" />
+            <path d="M18.5 3.5a9 9 0 0 1 0 13" />
+          </svg>
+
+          <span>CONSUMING</span>
+
+        </div>
+
+        <!-- Large heading only when disconnected -->
+        <h1 id="status">DISCONNECTED</h1>
+
+      </div>
+
+      <div class="controls">
+
+        <button id="connectButton" type="button">
+          RECONNECT
+        </button>
+
+        <p id="description">
+          The stream is paused.
+          The accumulated material remains.
+        </p>
+
+        <p id="description">
+          Headphones on. Press F8 to reconnect. F10 to disconnect.
+        </p>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer>
+    <span>ALIYAH JOHNSON</span>
+    <span>THE SYSTEM REMAINS.</span>
+  </footer>
+
+</body>
+</html>
